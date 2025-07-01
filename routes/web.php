@@ -29,9 +29,9 @@ Route::delete('/comments/{comment}', function (Comment $comment) {
     $commentData = Comment::find($comment->id);
     if ($commentData) {
         $comment->delete();
-        echo "Comment deleted successfully";
+        echo "Comment deleted successfully.";
     } else {
-        echo "Comment does not exist";
+        echo "Comment does not exist.";
     }
 });
 
